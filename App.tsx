@@ -1,5 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+import { Hero } from './components/Hero';
+import { About } from './components/About';
+import { Projects } from './components/Projects';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+
+export default function App() {
+    return (
+        <div className="min-h-screen">
+            <Hero />
+            <Projects />
+            <About />
+            <Contact />
+            <Footer />
+        </div>
+    );
+}
+
+/* <html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +25,7 @@
     
     <title>Rojanverse - Portfolio</title>
 
-    <link rel="stylesheet" href="assets/style/styles.css">
+    <link rel="stylesheet" href="style/global.css">
 </head>
 
 <body>
@@ -59,9 +76,9 @@
     </header>
 
     <main>
-        <div id="projects">
-            
-        </div>
+        <section id="projects">
+
+        </section>
     </main>
 
     <footer>
@@ -73,4 +90,4 @@
     <script src="assets/script/index.js"></script>
 </body>
 
-</html>
+</html> */
