@@ -1,35 +1,93 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Hero } from './components/Hero';
+import { About } from './components/About';
+import { Projects } from './components/Projects';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export default function App() {
+    return (
+        <div className="min-h-screen">
+            <Hero />
+            <Projects />
+            <About />
+            <Contact />
+            <Footer />
+        </div>
+    );
 }
 
-export default App
+/* <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rojan Jafarnezhad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Rojanverse - Portfolio</title>
+
+    <link rel="stylesheet" href="style/global.css">
+</head>
+
+<body>
+    <header id="about">
+        <h4>Hi there, I'm</h4>
+        <h1>Rojan</h1>
+        <h2>Creative Developer, Designer & Photographer</h2>
+        
+        <p id="intro">I craft digital experiences that bring ideas to life. Specializing in Web & App Development and creative coding.</p>
+
+        <nav class="links">
+            <ul>
+                <li>
+                    <button>
+                        <a href="https://github.com/rojanjn" id="github" target="_blank">
+                            <img src="assets/img/github-mark.png" alt="github logo">
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <a href="https://www.linkedin.com/in/rojan-jafarnezhad-68362b301/" id="linkedin" target="_blank">
+                            <img src="assets/img/linkedin.png" alt="linkedin logo">
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <a href="mailto:rojanjafarnezhad@gmail.com" id="email" target="_blank">
+                            <img src="assets/img/email.png" alt="mail logo">
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <a href="assets/resume/.pdf" id="resume" target="_blank">
+                            <img src="assets/img/google-docs.png" alt="document logo">
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <a href="#projects">View My Work</a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+
+        </section>
+    </main>
+
+    <footer>
+
+        <br>
+        <p>Made with &hearts; By Rojan Jafarnezhad</p>
+        <p>&copy; 2026 All rights reserved.</p>
+    </footer>
+    <script src="assets/script/index.js"></script>
+</body>
+
+</html> */
